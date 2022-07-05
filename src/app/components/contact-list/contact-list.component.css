@@ -1,0 +1,17 @@
+:host{
+display: block;
+}
+.content{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+
+}
+.example-card {
+    max-width: 400px;
+}
+.card-content{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}

@@ -1,0 +1,25 @@
+:host{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    align-items: center;
+    height: 30vh;
+    flex-flow: row wrap-reverse;
+}
+
+.container .item:nth-child(2n) {
+    align-self: flex-end;
+}
+.container .item:nth-child(2n+1) {
+    align-self: flex-start;
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 30vw;
+        flex-flow: column;
+    }
+}
